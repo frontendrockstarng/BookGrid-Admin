@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.col-12{
+    width: 100%;
+}
+
+.col-6{
+    width: 45%;
+}
+.col-4{
+    width: 30;
+}
+
+.col-3{
+    width: 20%;
+}
+
+.login-section{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+  
+}
+.whitespace{
+    width: 40%;
+    padding-left: 4%;
+    padding-top: 4%;
+}
+.imgspace{
+    width: 60%;
+    background: url('https://res.cloudinary.com/colt-copy/image/upload/v1623832026/vladimir-mokry-G-4wX5tZNuE-unsplash_wtcbxc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-link{
+    width: 30%;
+    display: flex;
+    color: #2C2C2C;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.logo{
+    margin-top: 5px;
+    width: 35px;
+}
+
+.logo-link span{
+    margin-right: 10px;
+}
+
+.logo-text{
+    font-size: 2.5em;
+}
+.imspace-overlay{
+    background-color: rgba(35, 117, 171, 0.624);
+    height: 100vh;
+}
+.form-div{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -10%;
+}
+
+.form{
+    width: 30%;
+    background-color: #006AB1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5% 0;
+    margin-top: 5%;
+}
+
+.form h4{
+    font-weight: 300;
+}
+
+.input-group{
+    border: 2px #fff solid;
+    margin-top: 5%;
+    padding: 1% 3%;
+    display: flex;
+    border-radius: 7px;
+    width: 80%;
+}
+
+.fas, .fa, .fab{
+    color: #fff;
+    margin-top: 3px;
+}
+
+input{
+    background-color: transparent;
+    outline-style: none;
+    border: none;
+    line-height: 2em;
+    margin-left: 5%;
+    color: #fff;
+}
+
+input::placeholder{
+    color: rgb(252, 252, 252);
+}
+input:hover::placeholder{
+   transition: color .3s ease-in;
+   color: rgb(208, 208, 208);
+}
+
+.form-actions{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.form-actions a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.rembr-pword{
+    display: flex;
+    width: 50%;
+}
+
+#checkbox{
+    margin-right: 4%;
+}
+
+.btn-login{
+    width: 40%;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #FFC857;
+    text-decoration: none;
+    color: #006AB1;
+    margin-top: 3%;
+    line-height: 2.5em;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .form{
+        width: 45%;
+       
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .form{
+        position: relative;
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .form-div{
+        position: relative;
+        height: auto;
+        margin-top: 20%;
+        left: 0;
+    }
+
+    .login-section{
+        height: 100%;
+    }
+    .imgspace{
+        display: none;
+    }
+
+    .whitespace{
+        width: 100%;
+    }
+
+   
+}
